@@ -81,11 +81,11 @@ public class Main {
 //        double[] x = new double[2];
 //        double[] y = new double[2];
 //        for(int i = 0; i < 2; i++){
-//            System.out.printf("Digite a cordenada x %d", i+1);
+//            System.out.printf("Digite a cordenada x %d: ", i+1);
 //            x[i] = sc.nextDouble();
 //        }
 //        for(int i = 0; i < 2; i++){
-//            System.out.printf("Digite a cordenada y %d", i+1);
+//            System.out.printf("Digite a cordenada y %d: ", i+1);
 //            y[i] = sc.nextDouble();
 //        }
 //        double ymenos = y[1] - y[0];
