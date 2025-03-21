@@ -9,5 +9,6 @@ public class Main {
         pessoa.altura = 1.95f;
         System.out.printf("Nome: %s Idade: %d Altura: %.2f", pessoa.nome, pessoa.idade, pessoa.altura);
 
+
     }
 }
