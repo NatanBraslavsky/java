@@ -1,6 +1,6 @@
 package controle;
-import dominio.Funcionario;
 import java.util.Scanner;
+import dominio.Funcionario;
 
 public class GerenciadorFuncionario {
     public static void main(String[] args) {
