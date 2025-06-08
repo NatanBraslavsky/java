@@ -18,11 +18,26 @@ public class Main {
         } catch(IOException e){
             e.printStackTrace();
         }
-        if (!nomes.isEmpty()) {
+        if (!nomes.isEmpty() && nomes.size() == 4) {
             String nomeSorteado = nomeAleatorio(nomes, random);
-            System.out.println("Nome sorteado: " + nomeSorteado);
+            for(int i = 0; i < nomes.size(); i++){
+                if(nomes.get(i) == nomeSorteado){
+                    nomes.remove(i);
+                }
+            }
+            String segundoSorteado = nomeAleatorio(nomes,random);
+            for(int i = 0; i < nomes.size(); i++){
+                if(nomes.get(i) == nomeSorteado){
+                    nomes.remove(i);
+                }
+            }
+            ArrayList<String> novosNomes = new ArrayList<String>();
+            for(int i = 0; i < nomes.size(); i++){
+                novosNomes.add(nomes.get(i));
+            }
+            System.out.printf("A dupla será: %s e %s CONTRA %s e %s", nomeSorteado, segundoSorteado, novosNomes.get(0), novosNomes.get(1));
         } else {
-            System.out.println("Lista de nomes está vazia.");
+            System.out.println("Lista de nomes está incompleta.");
         }
     }
 
