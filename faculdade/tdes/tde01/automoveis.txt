@@ -1,0 +1,1 @@
+abc,celta,honda,2005,20000.0
